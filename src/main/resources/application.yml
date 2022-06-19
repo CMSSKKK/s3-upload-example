@@ -1,18 +1,14 @@
-#s3:
-#  access-key: ${ACCESS_KEY}
-#  secret-key: ${SECRET_KEY}
-#  bucket-name: ${BUCKET_NAME}
-#  region: ${REGION}
+s3:
+  access-key: ${ACCESS_KEY}
+  secret-key: ${SECRET_KEY}
+  bucket-name: ${BUCKET_NAME}
+  region: ${REGION}
 
 
 cloud:
   aws:
-    credentials:
-      accessKey: ${ACCESS_KEY}
-      secretKey: ${SECRET_KEY}
-    s3:
-      bucket: ${BUCKET_NAME}
     region:
       static: ${REGION}
     stack:
       auto: false
+
