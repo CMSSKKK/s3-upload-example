@@ -15,7 +15,7 @@ public class UploadController {
     private final UploadService uploadService;
 
     @PostMapping("/images/upload")
-    public String upload(@RequestPart("file") MultipartFile multipartFile) throws IOException {
+    public String upload(@RequestPart("file") MultipartFile multipartFile) {
        return uploadService.uploadPublic(multipartFile);
     }
 
