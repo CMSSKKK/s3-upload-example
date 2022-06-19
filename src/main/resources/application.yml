@@ -7,8 +7,17 @@ s3:
 
 cloud:
   aws:
+    credentials:
+      accessKey: ${ACCESS_KEY}
+      secretKey: ${SECRET_KEY}
     region:
       static: ${REGION}
     stack:
       auto: false
 
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB

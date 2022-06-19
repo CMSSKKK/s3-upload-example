@@ -37,7 +37,7 @@ public class UploadService {
     }
 
     private String generateUniqueKey(String fileName) {
-        String fileNameExtension = fileName.substring(fileName.lastIndexOf(".") - 1);
+        String fileNameExtension = fileName.substring(fileName.lastIndexOf("."));
         return UUID.randomUUID() + fileNameExtension;
     }
 
