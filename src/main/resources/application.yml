@@ -7,9 +7,6 @@ s3:
 
 cloud:
   aws:
-    credentials:
-      accessKey: ${ACCESS_KEY}
-      secretKey: ${SECRET_KEY}
     region:
       static: ${REGION}
     stack:
